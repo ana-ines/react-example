@@ -39,7 +39,7 @@ const styles = {
 };
 
 function User({ user, classes }) {
-	return (<Paper className={classes.paper} zDepth={4} >
+	return (<Paper className={classes.paper} zDepth={4}>
 						<div className={ classes.container }>
 							<div className="row">
 								<div className={ classes.avatarContainer }>

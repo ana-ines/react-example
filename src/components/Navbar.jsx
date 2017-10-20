@@ -5,7 +5,7 @@ import { withStyles } from 'material-ui/styles';
 const styles = {
 	header: {
 		color: 'rgba(255, 255, 255, 1)',
-    backgroundColor: '#232323',
+    backgroundColor: '#f3f3f3',
     padding: '0.5em',
     width: '100%',
     fontFamily: 'Helvetica, sans-serif'
@@ -14,7 +14,7 @@ const styles = {
 		marginLeft: '3em',
 	},
 	title: {
-		color: 'white',
+		color: '#607D8B',
 		fontWeight: '100',
 	}
 };
@@ -23,7 +23,7 @@ const Navbar = ({ classes }) => (
   <AppBar className={ classes.header }
     title="Title">
     <div className={ classes.navContainer }>
-    	<h3 className={ classes.title } >:::  React by example </h3>
+    	<h3 className={ classes.title }> React by example </h3>
     </div>
   </AppBar>
 );
