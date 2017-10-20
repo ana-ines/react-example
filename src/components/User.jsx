@@ -9,7 +9,8 @@ const styles = {
 				height: '6em',
 				borderRadius: '100%',
 				border: '0.4em solid white',
-				boxShadow: '0px 0px 9px 3px #cccccc'
+				boxShadow: '0px 0px 9px 3px #cccccc',
+				filter: 'grayscale(100%)'
 			},
 			container: {
 				backgroundColor: '#607d8b',
