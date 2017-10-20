@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import { MuiThemeProvider, createMuiTheme, withStyles } from 'material-ui/styles';
 import { red } from 'material-ui/colors';
 import UserList from './UserList';
+import Navbar from './Navbar';
 
 const styles = {
 	main: {
@@ -15,7 +16,6 @@ const styles = {
 	}
 	
 };
-
 
 const users = [{
 						    "login": "mojombo",
@@ -42,8 +42,9 @@ const theme = createMuiTheme();
 
 function App({ pushPath, children, classes, onInputChanged }) {
 	return (
-		<MuiThemeProvider theme={theme}>
-			<main className={classes.main} >
+		<MuiThemeProvider theme={ theme }>
+			<main className={ classes.main }>
+				<Navbar />
 				<UserList users={ users } />
 			</main>
 		</MuiThemeProvider>

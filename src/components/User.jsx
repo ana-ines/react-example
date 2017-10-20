@@ -34,7 +34,7 @@ const styles = {
 	    	textTransform: 'uppercase',
 	    	fontFamily: 'Roboto, sans-serif',
 	    	color: 'white',
-	    	fontWeight: '600'
+	    	fontWeight: '400'
 			}
 };
 
