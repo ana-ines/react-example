@@ -1,10 +1,19 @@
 import React from 'react';
 import User from './User';
+import { withStyles } from 'material-ui/styles';
 
-function UserList({users}) {
+const styles = {
+	userList: {
+		display: 'inline-block',
+		margin: '0.5em',
+		float: 'left'
+	}
+};
+
+function UserList({ users, classes }) {
 	return <ul>
-		{ users.map( (u, i) => <li key={i}> <User user={u} /> </li>) }	
+		{ users.map( (u, i) => <li className={ classes.userList } key={i}> <User user={u} /> </li>) }	
 	</ul>;
 }
 
-export default UserList;
+export default withStyles(styles)(UserList);
